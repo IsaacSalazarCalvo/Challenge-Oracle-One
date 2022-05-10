@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,  userscalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
+		<title>Encriptador y desencriptador de frases</title>
+		<link rel="stylesheet" href="reset.css">
+		<link rel="stylesheet" href="estilo.css">
+	</head>	
+	<body>
+		<div class="contenedor">
+			<main>
+				<div>
+					<video class="video" src="Video/Galaxy2.mp4" autoplay="true" muted="true" loop="true"></video>
+				</div>
+				<div class=encriptador>
+						<h1 class="tituloEnc">Encriptador y desencriptador</h1>
+						<textarea class= "fraseOri" name="frase" cols=30 rows=10 placeholder="Ingrese su frase o palabra aquí..." ></textarea>
+						<button class= "botonEnc" id="encriptar" >Encriptar</button>
+						<button class= "botonDes" id="desencriptar" >Desencriptar</button>
+				</div>			
+				<div class=resultado>
+						<h1 class="tituloResultado">Frase encriptada</h1>
+						<textarea id="fraseEncriptada" class= "fraseEnc" cols=30 rows=10></textarea>
+						<button class= "botonCopy" id="copiar">Copiar</button>
+				</div>				
+			</main>
+			<footer>
+				<div >
+					<p class="developed">Developed by: Isaac Salazar Calvo</p><br>
+					<a href="https://www.linkedin.com/in/isaac-salazar-218310237/" target="_blank"><img src="Imagenes/linkedin-logo.png" width="30px"></a>
+					<a href="https://github.com/IsaacSalazarCalvo" target="_blank"><img src="Imagenes/GitHub-logo.png" width="30px"></a>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
+<script src="encriptador.js"></script>

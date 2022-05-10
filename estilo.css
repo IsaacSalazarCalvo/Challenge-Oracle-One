@@ -1,0 +1,241 @@
+body{
+    font-family: 'Lucida Sans';
+    width: auto;
+    height: auto;
+}
+
+.contenedor{
+    width: 100%;
+    max-width: 1000px;
+}
+
+.video{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.encriptador{
+    position: absolute;
+    top: 5%;
+    left: 0px;
+    width: 60%;
+}
+
+.tituloEnc{
+    color: white;
+    font-weight: bold;  
+    font-size: 25px;
+    text-align: center;  
+}
+
+.fraseOri{
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    width: 60%;
+    height: 350px;
+    margin-top: 7%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    border-color: white;
+    border-radius: 20px;
+    background-color: unset;
+}
+
+.botonEnc{
+    background-color: #03284a;
+    font-size: 100%;
+    text-align: center;
+    color: white;
+    width: 20%;
+    height: 67px;
+    position: absolute;
+    margin-top: 5%;
+    margin-left: 50%;
+    transform: translateX(-110%);
+    border-radius: 20px;
+}
+
+.botonDes{
+    background-color: #03284a;
+    font-size: 100%;
+    text-align: center;
+    color: white;
+    position: absolute;
+    width: 20%;
+    height: 67px;
+    margin-top: 5%;
+    margin-left: 50%;
+    transform: translateX(+15%);
+    border-radius: 20px;
+}
+
+.botonEnc:hover{
+    background-color: #0BC6E7;
+    font-weight: bold;
+    font-size: 22px;
+    font-style: italic;
+}
+
+.botonDes:hover{
+    background-color: #0BC6E7;
+    font-weight: bold;
+    font-size: 22px;
+    font-style: italic;
+}
+.resultado{
+    position: absolute;     
+    top: 5%;
+    left: 60%;
+    width: 40%;
+}
+
+.tituloResultado{
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+}
+
+.fraseEnc{
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    height: 350px;
+    display: flex;
+    border-radius: 20px;
+    background-color: unset;  
+    border-color: white;
+}
+
+.botonCopy{
+    background-color: #03284a;
+    font-size: 100%;
+    text-align: center;
+    color: white;
+    width: 20%;
+    height: 67px;
+    position: absolute;
+    margin-top: 7%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    border-radius: 20px;
+}
+
+.botonCopy:hover{
+    background-color: #0BC6E7;
+    font-weight: bold;
+    font-size: 22px;
+    font-style: italic;
+}
+
+input:focus { 
+    outline: none !important;
+    border-color: #0BC6E7;
+    box-shadow: 0 0 100px #0BC6E7;
+}
+
+textarea:focus { 
+    outline: none !important;
+    border-color: #0BC6E7;
+    box-shadow: 0 0 100px #0BC6E7;
+}
+
+footer{
+    text-align: center;
+    font-size: 15px;
+    text-decoration: underline;
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    height: 70px;
+    color: white;
+}
+
+@media screen and (max-width:800px){
+    .encriptador{
+        position: relative;
+        width:50%;
+        margin-top: 5%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .fraseOri{
+        font-size: 15px;
+        color: white;
+        text-align: center;
+        width: 350px;
+        height: 250px;
+        margin-top: 5%;
+    }
+
+    .botonEnc{
+        font-size: 15px;
+        width: 25%;       
+    }
+    
+    .botonDes{
+        font-size: 15px;
+        width: 30%;
+    }
+    
+    .botonEnc:hover{
+        font-size: 17px;
+    }
+    
+    .botonDes:hover{
+        font-size: 17px;
+    }
+
+    .resultado{
+        position: relative;
+        width: 50%;
+        left: 0%;
+        margin-top: 15%;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .fraseEnc{
+        font-size: 15px;
+        color: white;
+        text-align: center;
+        width: 350px;
+        height: 250px;
+        margin-top: 5%;
+    }
+
+    .botonCopy{
+        font-size: 17px;
+        width: 25%;
+        margin-top: 5%;
+    }
+    
+    .botonCopy:hover{
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width:400px){
+    .encriptador{
+        width:100%;
+        left: 0%;        
+    }
+
+    .resultado{
+        width: 100%;
+        left: 0%;
+    }
+}
